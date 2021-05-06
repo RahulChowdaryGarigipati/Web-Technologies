@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <style>
+        /* Header-Menu */
+        #header-logo {
+            height: 25px;
+            width: 25px;
+            background-color: #f8f7f2;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 30px;
+            padding-top: 5px;
+            margin: 5px 40px;
+        }
+
+        .header-list {
+            padding-left: 10%;
+        }
+        /* Section */
+        section {
+            height: 88vh;
+            background: #f5f5f1;
+        }
+
+        /* section container */
+        .container {
+            padding: 20px 45px;
+            height: 85vh;
+        }
+
+        h2 {
+            color: #6980c5;
+            border-bottom: 1px solid #5bc2e7;
+            ;
+        }
+
+        .section-body {
+            padding: 30px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        
+        .text-education {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 15px;
+        }
+        .past-education1 {
+            border: 1px solid #fef1b6;
+            padding: 10px;
+            border-radius: 25px;
+            background: SkyBlue;
+        }
+
+
+        .past-education {
+            border: 1px solid #fef1b6;
+            padding: 10px;
+            border-radius: 25px;
+            background: #fef1b6;
+        }
+
+        /* Navigation Styles*/
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+
+        .left-side {
+            display: flex;
+        }
+
+
+
+        .nav-bar > .left-side > div {
+            margin-right: 20px;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+
+
+        .nav-link-bar {
+            height: 23px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.5s;
+        }
+
+
+
+            .nav-link-bar a {
+                color: #8a8a8a;
+                text-decoration: none;
+                transition: color 0.5s;
+            }
+
+
+
+            .nav-link-bar:hover {
+                border-bottom: 1px solid black;
+            }
+
+
+            .nav-link-bar a:hover {
+                color: black;
+            }
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+
+            #header-logo {
+                height: 25px;
+                width: 25px;
+                background-color: #f8f7f2;
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 30px;
+                padding-top: 5px;
+                margin: 1px 1px;
+            }
+
+            section {
+                height: 105vh;
+                background: #f5f5f1;
+            }
+
+            .header-list {
+                padding-left: 0%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <div class="left-side">
+                <div class="nav-link-bar">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-bar">
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="nav-link-bar">
+                    <a href="qualifications.html">Qualifications</a>
+                </div>
+
+                <div class="nav-link-bar">
+                    <a href="contact.html">Contact Me</a>
+                </div>
+            </div>
+
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Aggie ID : 800765549</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+
+        <div class="container">
+            <h2>Education</h2>
+            <div class="section-body">
+                <div class="past-education1">
+                    <p class="text-education">
+                        New Mexico State University
+                        <span style="float: right;"> SPRING - 2021</span>
+                        <br>
+                        <span style="font-weight: normal;font-size: 16px;">Masters Program in Computer Science</span>
+                    </p>
+                </div>
+                <br>
+                <div class="past-education">
+                    <p class="text-education">
+                        G.I.T.A.M Deemed to be University
+                        <span style="float: right;"> 2016 - 2020</span>
+                        <br>
+                        <span style="font-weight: normal;font-size: 16px;">Bachelor of Technology, Computer Science and Engineering</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <script>
+			function myFunction() {
+			var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
+    </script>
+
+    <footer>
+        <p>
+            &copy; Copyright 2021 <span style="float:right;">
+                Contact information:
+                rahulg@nmsu.edu.
+            </span>
+        </p>
+    </footer>
+</body>
+
+</html>

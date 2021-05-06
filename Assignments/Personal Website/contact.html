@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <style>
+        /* Header-Menu */
+        #header-logo {
+            height: 25px;
+            width: 25px;
+            background-color: #f8f7f2;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 30px;
+            padding-top: 5px;
+            margin: 5px 40px;
+        }
+
+        .header-list {
+            padding-left: 10%;
+        }
+        /* Section */
+        section {
+            height: 85vh;
+            background: #f8f7f2;
+        }
+
+        .container {
+            padding: 90px 350px;
+        }
+
+        .header {
+            height: auto;
+            width: auto;
+        }
+
+        .card {
+            background: white;
+            height: 65vh;
+            border-radius: 25px;
+        }
+
+        .card-background {
+            width: 808px;
+            height: 150px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        h4 {
+            color: #7196B1;
+        }
+
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+
+        /* Navigation Styles*/
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+
+        .left-side {
+            display: flex;
+        }
+
+
+
+        .nav-bar > .left-side > div {
+            margin-right: 20px;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+
+
+        .nav-link-bar {
+            height: 23px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.5s;
+        }
+
+
+
+            .nav-link-bar a {
+                color: #8a8a8a;
+                text-decoration: none;
+                transition: color 0.5s;
+            }
+
+
+
+            .nav-link-bar:hover {
+                border-bottom: 1px solid black;
+            }
+
+
+            .nav-link-bar a:hover {
+                color: black;
+            }
+
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+
+            #header-logo {
+                height: 25px;
+                width: 25px;
+                background-color: #f8f7f2;
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 30px;
+                padding-top: 5px;
+                margin: 1px 1px;
+            }
+
+            section {
+                height: 89vh;
+                background: #f8f7f2;
+            }
+
+            .container {
+                padding: 90px 50px;
+            }
+
+            .card {
+                background: white;
+                height: 65vh;
+                border-radius: 25px
+            }
+
+            .card-background {
+                width: 260px;
+                height: 150px;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+
+            .header-list {
+                padding-left: 0%;
+            }
+
+            ;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .card-background {
+                width: 725px;
+                height: 150px;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+        }
+    </style>
+</head>
+<div class="header">
+    <div class="nav-bar">
+        <div class="left-side">
+            <div class="nav-link-bar">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-link-bar">
+                <a href="projects.html">Projects</a>
+            </div>
+
+            <div class="nav-link-bar">
+                <a href="qualifications.html">Qualifications</a>
+            </div>
+
+            <div class="nav-link-bar">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+
+
+        <div class="right-side">
+            <div class="brand">
+                <div>Aggie ID : 800765549</div>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="card">
+            <br>
+            <div style="margin: 20px;">
+
+                <h4><span><img src="https://image.flaticon.com/icons/svg/893/893306.svg" style="width: 15px;"></span> Email &nbsp;&nbsp;&nbsp;: <span style="color: black;"> &nbsp; rahulg@nmsu.edu</span></h4>
+                <br>
+                <h4><span><img src="https://image.flaticon.com/icons/svg/1076/1076323.svg" style="width: 15px;"></span> Address &nbsp;&nbsp;&nbsp;: <span style="color: black;"> &nbsp;  2630 S Espina ST, APT - 12, Las Cruces, NM, 88001</span></h4>
+                <br>
+                <h4><span><img src="https://www.flaticon.com/svg/vstatic/svg/1034/1034182.svg?token=exp=1614192620~hmac=7915a1a48708fe10cae848faeba63f77" style="width: 15px;"</span> Phone No &nbsp;&nbsp;&nbsp;: <span style="color: black;"> &nbsp; +1 302-990-2255</span></h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+			function myFunction() {
+			var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
+</script>
+
+<footer>
+    <p>
+        &copy; Copyright 2021 <span style="float:right;">
+            Contact information:
+            rahulg@nmsu.edu.
+        </span>
+    </p>
+</footer>
+</html>

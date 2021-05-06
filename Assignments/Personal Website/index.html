@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>My Profile</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		.column{
+			float: left;
+			padding10px;
+		}
+		.column.side{
+			width: 25px;
+		}
+		. coulumnmiddle{
+			width: 50px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="nav-bar">
+			<div class="left-side">
+				<div class="nav-link-bar">
+					<a href="index.html">Home</a>
+				</div>
+
+				<div class="nav-link-bar">
+					<a href="projects.html">Projects</a>
+				</div>
+
+				<div class="nav-link-bar">
+					<a href="qualifications.html">Qualifications</a>
+				</div>
+
+				<div class="nav-link-bar">
+					<a href="contact.html">Contact Me</a>
+				</div>
+			</div>
+
+
+			<div class="right-side">
+				<div class="brand">
+					<div>Aggie ID : 800765549</div>
+				</div>
+			</div>
+		</div>
+
+		<section>
+
+			<div class="columnmiddle">
+				<div class="container">
+					<div style="text-align: center"><img src="NMSU_Engineering_Logo-Vertical-2.jpg" width="100" /></div>
+					<ul id="list-float">
+						<li>
+
+							<div class="name-style">
+								<p style="color: black">My Profile</p>
+								<h1 style="color: black;">Rahul Chowdary Garigipati</h1>
+								<h2 style="color: black;">Computer Science Graduate Student</h2>
+								<br>
+								<img src="Passport-Size-Pic.jpeg" class="my-image" style="width:300px;height:300px">
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+
+		</section>
+
+	</div>
+	
+	<button onclick="myFunction()">Toggle dark mode</button>
+
+	<script>
+			function myFunction() {
+			var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
+	</script>
+
+	<footer>
+		<p>
+			&copy; Copyright 2021 <span style="float:right;">
+				Contact information:
+				rahulg@nmsu.edu. <span align="right">
+		</p>
+	</footer>
+</body>
+</html>
